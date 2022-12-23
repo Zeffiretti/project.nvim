@@ -150,12 +150,12 @@ local function projects(opts)
     previewer = false,
     sorter = telescope_config.generic_sorter(opts),
     attach_mappings = function(prompt_bufnr, map)
-      map("n", "<leader>mf", find_project_files)
-      map("n", "<leader>mb", browse_project_files)
-      map("n", "<leader>md", delete_project)
-      map("n", "<leader>ms", search_in_project_files)
-      map("n", "<leader>mr", recent_project_files)
-      map("n", "<leader>mw", change_working_directory)
+      map("n", "<space>mf", find_project_files)
+      map("n", "<space>mb", browse_project_files)
+      map("n", "<space>md", delete_project)
+      map("n", "<space>ms", search_in_project_files)
+      map("n", "<space>mr", recent_project_files)
+      map("n", "<space>mw", change_working_directory)
 
       map("i", "<c-f>", find_project_files)
       map("i", "<c-b>", browse_project_files)
