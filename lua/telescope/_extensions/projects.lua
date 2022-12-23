@@ -1,10 +1,11 @@
 -- Inspiration from:
 -- https://github.com/nvim-telescope/telescope-project.nvim
 local has_telescope, telescope = pcall(require, "telescope")
+local keymap = vim.keymap
 
-if not has_telescope then
-  return
-end
+-- if not has_telescope then
+--   return
+-- end
 
 local finders = require("telescope.finders")
 local pickers = require("telescope.pickers")
